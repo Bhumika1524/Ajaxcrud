@@ -1,0 +1,8 @@
+//$("#<%#= dom_id @user %>").replaceWith("<%#= j render @user %>");
+<%# @user = User.new %>
+//$("#users").replaceWith("")
+// $(".new_user").replaceWith("<%#= j render "form" %>")
+//$(".new_user")[0].reset();
+
+ $("#target").html("");
+ $("table tbody").append("<%= j render partial: @user %>")

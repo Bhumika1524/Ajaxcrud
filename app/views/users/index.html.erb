@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+<h1>Users</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+  <tbody id='users'>
+  <% @users.each do |user| %>
+    <%= render user %>
+  <% end %>
+  </tbody>
+</table>
+<br/>
+<br/>
+<%= link_to 'New User', new_user_path, remote: true, html: {class: "new_user"} %>
+
+
+<div id="target"></div>

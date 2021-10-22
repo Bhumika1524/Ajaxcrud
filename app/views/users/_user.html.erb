@@ -1,0 +1,33 @@
+<tr id="<%= dom_id user %>">
+  <td><%= user.name %></td>
+  <td><%= link_to 'Show', user, remote: true, html: {class: "show_user"} %></td>
+  <td><%= link_to 'Edit', edit_user_path(user), :remote => true ,html: {class: "edit_user"}%></td>
+  <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete, :remote => true ,html: {class: "destroy_user"}%></td>
+</tr>
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        $(document).on("click", ".show_user", function (e) {-->
+<!--            $("#target").toggle();-->
+<!--            $.ajax({-->
+<!--                url: "/users/@user",-->
+<!--                type: "get",-->
+<!--                success: function (data) {-->
+<!--                },-->
+<!--                error: function (data) {-->
+<!--                }-->
+<!--            })-->
+<!--        });-->
+<!--        $(document).on("click", ".edit_user", function (e) {-->
+<!--            $("#target").toggle();-->
+<!--            $.ajax({-->
+<!--                url: "/users/@user",-->
+<!--                type: "get",-->
+<!--                success: function (data) {-->
+<!--                },-->
+<!--                error: function (data) {-->
+<!--                }-->
+<!--            })-->
+<!--        });-->
+
+<!--    });-->
+<!--</script>-->
